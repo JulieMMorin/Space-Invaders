@@ -7,6 +7,7 @@ public class EnemyBehaviour : MonoBehaviour
 {
     public AudioSource audio;
     public AudioClip destroySFX;
+    public GameObject counter;
 
     // Start is called before the first frame update
     void Start()
@@ -29,6 +30,7 @@ public class EnemyBehaviour : MonoBehaviour
         if (otherCollider.tag == "Projectile")
         {
             audio.PlayOneShot(destroySFX);
+           counter.GetComponent<GameManager>().Subtract();
             Destroy(gameObject);
 			
 			// Get the game object, as a whole, that's attached to the Collider2D component
