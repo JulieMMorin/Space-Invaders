@@ -12,7 +12,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Birds
   - 
   - 
   - 
@@ -39,6 +39,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: BG
+    uniqueID: 2968679599
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Birds
+    uniqueID: 3178589035
     locked: 0
